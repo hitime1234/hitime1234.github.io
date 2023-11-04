@@ -1,7 +1,9 @@
 # AboutMeWebsite
 Just the source code for my about me website
 
-# Random images just being added to commit folder for some reason :3
+# Random images 
+# just being added to commit folder for some reason :3
+
 
 ![alt text](download.jpg)
 
