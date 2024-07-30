@@ -95,4 +95,16 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     
-  }
+}
+
+.centerButton-above {
+  display: inline-block;
+  margin-top: 15ch;
+  display: block;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    
+}
