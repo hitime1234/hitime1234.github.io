@@ -22,6 +22,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Pull item
-        run: cd ../static/main ; git pull origin main
+        run: cd ../../../static/main ; ls ; git pull origin main
     
   
