@@ -11,13 +11,13 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  CodeCheckout:
+  ChecksVpsActive:
     runs-on: self-hosted
     steps:
       - uses: actions/checkout@v3
 #pulls new project files
   PullProject:
-    needs: CodeCheckout
+    needs: ChecksVpsActive
     runs-on: VPS
     steps:
       - uses: actions/checkout@v4
