@@ -23,6 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Pull item
-        run: cd /home/web/static/main ; ls ; git pull origin main ; sudo systemctl reload caddy.service
+        run: cd /home/web/static/main ; ls ; git pull origin main ; cd ../ ; ./restartCaddy.sh
     
 
