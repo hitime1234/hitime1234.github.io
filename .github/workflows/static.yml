@@ -13,6 +13,7 @@ concurrency:
 jobs:
   ChecksVpsActive:
     runs-on: self-hosted
+    timeout-minutes: 5
     steps:
       - uses: actions/checkout@v3
 #pulls new project files
@@ -22,6 +23,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Pull item
-        run: cd /home/web/static/main ; ls ; git pull origin main
+        run: cd /home/web/static/main ; ls ; git pull origin main ; sudo systemctl reload caddy.service
     
-  
+
